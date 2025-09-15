@@ -1,0 +1,201 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+}
+header{
+    display: flex;          
+    justify-content: right;     /* centraliza horizontalmente na direita */
+    align-items: center;
+}
+
+
+p{
+    padding: 5px 5px;
+    display: flex;
+    display: inline-block; /* alinha em linha */
+    margin: 1px;
+}
+
+ p:hover {
+    cursor: pointer;                /* mãozinha */
+    text-decoration: underline;     /* grifa em baixo */
+ }
+
+.img1{
+    height: 170px;
+    width: auto;
+}
+
+P img{
+    width: 25PX;
+    height: auto;
+}
+
+P img:hover {
+ box-shadow: 0 0 5px rgba(0,0,0,0.2);
+ border-radius: 8px;
+}
+
+.login{
+    background-color: #0b57d0;
+    border-radius: 30px;
+    color: white;
+    margin: 10px;
+    padding: 5px 5px;
+
+}
+
+.section1{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    border: 1px solid #474747;
+    border-radius: 25px;
+    padding: 5px 10px;
+    width: 600px;
+    transition: 0.3s;
+    background: #fff;
+
+    }
+
+.barra input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.barra img {
+
+    width: 25px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.barra:hover {
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+main{
+    display: flex;
+    flex: 1; /* empurra o footer para baixo */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botao{
+    padding: 8px 8px;
+    margin: 15px;
+}
+
+.centraliza{
+    text-align: center;
+}
+
+footer{
+position:fixed;
+bottom: 0;   /* cola no fundo da tela */
+width: 100%; 
+}
+
+.brasil{
+padding: 15px 30px;
+background-color: #f7f8f9;
+    margin: 1px;
+
+}
+
+
+.rodape{
+    padding: 5px 3px;
+    display: flex;
+    display: inline-block; /* alinha em linha */
+    margin: 1px;
+}
+
+.rodape2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: #f7f8f9;}
+
+
+    /* Celulares */
+    @media (max-width: 600px) { 
+        P{
+            padding: 1px 1px;
+            display: flex;
+            display: inline-block; /* alinha em linha */
+            margin: 1px;
+            font-size: 12px; 
+        }
+
+
+        p img{
+            width: 18pX;
+            height: auto; 
+        }
+
+
+        .img1{
+        height: 120px;
+        width: auto;
+        }
+
+
+        .barra {
+        display: flex;
+        align-items: center;
+        border: 1px solid #474747;
+        border-radius: 25px;
+        padding: 3px 8px;
+        width: 400px;
+        transition: 0.3s;
+        background: #fff;
+
+        }
+
+
+        .barra input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 3px;
+        font-size: 9px;
+    }
+
+
+        .barra img {
+
+        width: 12px;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .rodape{
+    padding: 2px 1px;
+    display: flex;
+    display: inline-block; /* alinha em linha */
+    margin: 1px;
+    }
+
+    }
